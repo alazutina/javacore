@@ -19,4 +19,10 @@ Box(){
         height=10;
         depth=10;
 }
+    Box(double w, double h, double d){
+       // System.out.println("Конструирование объекта Box");
+        width=w;
+        height=h;
+        depth=d;
+    }
 }
