@@ -7,4 +7,11 @@ public class Box {
         return width*height*depth;
     }
 
+    void setDim(double w, double h, double d){
+        width=w;
+        height=h;
+        depth=d;
+
+    }
+
 }
