@@ -6,8 +6,13 @@ public class Test {
         b=j;
     }
 
-    boolean equals(Test o){
-        if(o.a==a && o.b==b) return true;
-        else return false;
+//    boolean equals(Test o){
+//        if(o.a==a && o.b==b) return true;
+//        else return false;
+//    }
+
+    void math(Test o){
+        o.a*=2;
+        o.b/=2;
     }
 }
