@@ -1,13 +1,14 @@
 public class Stack {
   //  public static void main(String[] args){
-        private int stck[] = new int[10];
+        private int stck[] ;//= new int[10];
         private int tos;
 
-        Stack(){
+        Stack(int size){
+            stck=new int[size];
             tos = -1;
         }
         void push(int item){
-            if(tos==9)
+            if(tos==stck.length-1)
                 System.out.println("Стек заполнен");
             else
                 stck[++tos]=item;
