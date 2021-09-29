@@ -32,17 +32,25 @@ class Box {
         return width*height*depth;
     }
 }
+// class BoxWeight extends Box{
+//double weight;
+//BoxWeight(double w, double h, double d, double m){
+//    width= w;
+//    height = h;
+//    depth=d;
+//    weight = m;
+//}
+//
+//}
+
  class BoxWeight extends Box{
 double weight;
 BoxWeight(double w, double h, double d, double m){
-    width= w;
-    height = h;
-    depth=d;
+    super(w,h,d);
     weight = m;
 }
 
 }
-
 class ColorBox extends Box{
     int color;
 
